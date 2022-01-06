@@ -157,6 +157,7 @@ public class MainOfChapter3 {
 */
 
         //quiz3.6
+/*
         double pounds,feet,inches;
         final double KILO_PER_POUND = 0.45359237;
         final double METER_PER_INCH = 0.0254;
@@ -177,6 +178,94 @@ public class MainOfChapter3 {
         }else{
             System.out.println("Obese");
         }
+*/
+
+        //quiz3.7
+/*
+        System.out.println("Enter an amount in double, for example 11.56:");
+        double amount = input.nextDouble();
+
+        int remainingAmount = (int)(amount * 100);
+
+        int numberOfOneDollars = remainingAmount /100;
+        remainingAmount = remainingAmount % 100;
+
+        int numberOfQuarters = remainingAmount /25;
+        remainingAmount = remainingAmount % 25;
+
+        int numberOfDimes = remainingAmount / 10;
+        remainingAmount = remainingAmount % 10;
+
+        int numberOfNickel = remainingAmount / 5;
+        remainingAmount = remainingAmount % 5;
+
+        int  numberOfPennies = remainingAmount;
+
+        System.out.println("Your amount " + amount + " consist of ");
+        if (numberOfOneDollars > 0){
+            if (numberOfOneDollars == 1)
+                System.out.print(numberOfOneDollars + " dollar ");
+            else
+                System.out.print(numberOfOneDollars + " dollars ");
+        }
+        if (numberOfQuarters > 0){
+            if (numberOfQuarters == 1)
+                System.out.print(numberOfQuarters + " quarter ");
+            else
+                System.out.print(numberOfQuarters + " quarters ");
+        }
+        if (numberOfDimes > 0){
+            if (numberOfDimes == 1)
+                System.out.print(numberOfDimes + " dime ");
+            else
+                System.out.print(numberOfDimes + " dimes ");
+        }
+        if (numberOfNickel > 0){
+            if (numberOfNickel == 1)
+                System.out.print(numberOfNickel + " nickle ");
+            else
+                System.out.print(numberOfNickel + " nickles ");
+        }
+        if (numberOfPennies > 0){
+            if (numberOfPennies == 1)
+                System.out.print(numberOfPennies + " penny ");
+            else
+                System.out.print(numberOfPennies + " pennies ");
+        }
+*/
+
+        //quiz
+/*
+        System.out.println("Enter three integers:");
+        int num1 = input.nextInt();
+        int num2 = input.nextInt();
+        int num3 = input.nextInt();
+
+        if (num1 < num2){
+            if (num1 < num3){
+                System.out.print(num1 + " ");
+                if (num2 < num3)
+                    System.out.print(num2 + " " + num3);
+                else
+                    System.out.print(num3 + " " + num2);
+            }
+            else
+                System.out.print(num3 + " " + num1 + " " + num1);
+        }
+        else
+        {
+            if (num2 < num3){
+                System.out.print(num2 + " ");
+                if (num1 < num2)
+                    System.out.print(num1 + " " + num3);
+                else
+                    System.out.println(num3 + " " + num1);
+            }
+            else
+                System.out.println(num3 + " " + num2 + " " + num1);
+        }
+*/
+
 
 
 
