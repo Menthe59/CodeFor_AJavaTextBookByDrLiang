@@ -234,7 +234,7 @@ public class MainOfChapter3 {
         }
 */
 
-        //quiz
+        //quiz3.8
 /*
         System.out.println("Enter three integers:");
         int num1 = input.nextInt();
@@ -265,6 +265,204 @@ public class MainOfChapter3 {
                 System.out.println(num3 + " " + num2 + " " + num1);
         }
 */
+
+        //quiz3.9
+/*
+        System.out.println("Enter the first 9 digits of an ISBN an integer :");
+        int numOfISBN = input.nextInt();
+        int d9 = numOfISBN % 10;
+        int d8 = numOfISBN / 10 % 10;
+        int d7 = numOfISBN / 100 % 10;
+        int d6 = numOfISBN / 1000 % 10;
+        int d5 = numOfISBN / 10000 % 10;
+        int d4 = numOfISBN / 100000 % 10;
+        int d3 = numOfISBN / 1000000 % 10;
+        int d2 = numOfISBN / 10000000 % 10;
+        int d1 = numOfISBN / 100000000;
+
+        int d10 = (d1 * 1 + d2 * 2 + d3 * 3 + d4 * 4 + d5 * 5 + d6 * 6
+                    + d7 * 7 + d8 * 8 + d9 * 9) % 11;
+
+        if (d10 == 10){
+            System.out.println("The ISBN-10 number is 0" + numOfISBN + "X");
+        }else {
+            System.out.println("The ISBN-10 number is 0" + numOfISBN + d10);
+        }
+*/
+
+        //quiz3.10
+/*
+        int num1 = (int)(Math.random() * 100);
+        int num2 = (int)(Math.random() * 100);
+
+        System.out.println("What is " + num1 + " + " + num2 + " ? ");
+        int answer = input.nextInt();
+        if (num1 + num2 == answer){
+            System.out.println("You are correct!");
+        }else{
+            System.out.println("Your answer is wrong.");
+            System.out.println(num1 + " + " + num2 + " should be " + (num1 + num2));
+        }
+*/
+
+        //quiz3.11
+/*
+        System.out.println("Enter a number of month :");
+        int numOfMonth = input.nextInt();
+
+        System.out.println("Enter a number of year :");
+        int numOfYear = input.nextInt();
+
+        switch (numOfMonth){
+            case 1:
+                System.out.println("January " + numOfYear + " has 31 days");
+                break;
+            case 2:
+                if (numOfYear % 4 == 0 && numOfYear % 100 != 0 || numOfYear % 400 == 0){
+                    System.out.println("February " + numOfYear + " has 29 days");
+                }else {
+                    System.out.println("February " + numOfYear + " has 28 days");
+                }
+                break;
+            case 3:
+                System.out.println("March " + numOfYear + " has 31 days");
+                break;
+            case 4:
+                System.out.println("April " + numOfYear + " has 30 days");
+                break;
+            case 5:
+                System.out.println("May " + numOfYear + " has 31 days");
+                break;
+            case 6:
+                System.out.println("June " + numOfYear + " has 30 days");
+                break;
+            case 7:
+                System.out.println("July " + numOfYear + " has 31 days");
+                break;
+            case 8:
+                System.out.println("August " + numOfYear + " has 31 days");
+                break;
+            case 9:
+                System.out.println("September " + numOfYear + " has 30 days");
+                break;
+            case 10:
+                System.out.println("October " + numOfYear + " has 31 days");
+                break;
+            case 11:
+                System.out.println("November " + numOfYear + " has 30 days");
+                break;
+            case 12:
+                System.out.println("December " + numOfYear + " has 31 days");
+                break;
+        }
+*/
+
+        //quiz3.12
+/*
+        System.out.println("Enter a three-digit integer :");
+        int threeDigNum,firstDig,lastNum;
+        threeDigNum = input.nextInt();
+        lastNum = threeDigNum % 10;
+        firstDig = threeDigNum / 100;
+        if (lastNum == firstDig){
+            System.out.println(threeDigNum + " is palindrome");
+        }else {
+            System.out.println(threeDigNum + " is not palindrome");
+        }
+*/
+
+        //quiz3.13
+/*
+        System.out.println("(0-single filter, 1-married jointly or qualifying widow(er)," +
+                " 2-head of separately, 3-head of household) Enter the filing status : ");
+
+        int status = input.nextInt();
+
+        System.out.println("Enter the taxable income : ");
+        double income = input.nextDouble();
+
+        double tax = 0;
+
+        if (status == 0){
+            if (income <= 8350){
+                tax = income * 0.01;
+            }else if (income <= 33950){
+                tax = 8350 * 0.01 + (income - 8350) * 0.15;
+            }else if (income <= 82250){
+                tax = 8350 * 0.01 + (33950 - 8350) * 0.15 + (income - 33590) * 0.25;
+            }else if (income <= 171550){
+                tax = 8350 * 0.01 + (33950 - 8350) * 0.15 + (82250 - 33590) * 0.25
+                        + (income - 82250) * 0.28;
+            }else if (income <= 372950){
+                tax = 8350 * 0.01 + (33950 - 8350) * 0.15 + (82250 - 33590) * 0.25
+                        + (171550 - 82250) * 0.28 + (income - 171550) * 0.33;
+            }else {
+                tax = 8350 * 0.01 + (33950 - 8350) * 0.15 + (82250 - 33590) * 0.25
+                        + (171550 - 82250) * 0.28 + (income - 171550) * 0.33 + (income - 372950) * 0.35;
+            }
+        } else if (status == 1){
+            if (income <= 16700){
+                tax = income * 0.01;
+            }else if (income <= 67900){
+                tax = 16700 * 0.01 + (income - 16700) * 0.15;
+            }else if (income <= 137050){
+                tax = 16700 * 0.01 + (67900 - 16700) * 0.15 + (income - 137050) * 0.25;
+            }else if (income <= 208850){
+                tax = 16700 * 0.01 + (67900 - 16700) * 0.15 + (137050 - 67900) * 0.25
+                        + (income - 137050) * 0.28;
+            }else if (income <= 372950){
+                tax = 16700 * 0.01 + (67900 - 16700) * 0.15 + (137050 - 67900) * 0.25
+                        + (208850 - 137050) * 0.28 + (income - 208850) * 0.33;
+            }else {
+                tax = 16700 * 0.01 + (income - 16700) * 0.15 + (137050 - 137050) * 0.25
+                        + (208850 - 137050) * 0.28 + (372950 - 208850) * 0.33 + (income - 372950) * 0.35;
+            }
+        }else if (status ==2){
+            if (income <= 8350){
+                tax = income * 0.01;
+            }else if (income <= 33950){
+                tax = 8350 * 0.01 + (income - 8350) * 0.15;
+            }else if (income <= 68525){
+                tax = 8350 * 0.01 + (33950 - 8350) * 0.15 + (income - 33950) * 0.25;
+            }else if (income <= 104425){
+                tax = 8350 * 0.01 + (33950 - 8350) * 0.15 + (68525 - 33590) * 0.25
+                        + (income - 68525) * 0.28;
+            }else if (income <= 186475){
+                tax = 8350 * 0.01 + (33950 - 8350) * 0.15 + (68525 - 33590) * 0.25
+                        + (104425 - 68525) * 0.28 + (income - 104425) * 0.33;
+            }else {
+                tax = 8350 * 0.01 + (33950 - 8350) * 0.15 + (68525 - 33590) * 0.25
+                        + (104425 - 68525) * 0.28 + (income - 104425) * 0.33 + (income - 186475) * 0.35;
+            }
+        }else if (status ==3){
+            if (income <= 11950){
+                tax = income * 0.01;
+            }else if (income <= 45500){
+                tax = 11950 * 0.01 + (income - 11950) * 0.15;
+            }else if (income <= 117450){
+                tax = 11950 * 0.01 + (45500 - 11950) * 0.15 + (income - 45500) * 0.25;
+            }else if (income <= 190200){
+                tax = 11950 * 0.01 + (45500 - 11950) * 0.15 + (117450 - 45500) * 0.25
+                        + (income - 117450) * 0.28;
+            }else if (income <= 372950){
+                tax = 11950 * 0.01 + (44550 - 11950) * 0.15 + (117450 - 45500) * 0.25
+                        + (190200 - 117450) * 0.28 + (income - 190200) * 0.33;
+            }else {
+                tax = 11950 * 0.01 + (income - 11950) * 0.15 + (income - 45500) * 0.25
+                        + (190200 - 117450) * 0.28 + (372950 - 190200) * 0.33 + (income - 372950) * 0.35;
+            }
+        }else{
+            System.out.println("Error : invalid status");
+            System.exit(1);
+        }
+
+        System.out.println("Tax is " + (int)(tax * 100) / 100.0);
+*/
+
+        //quiz3.14
+
+
+
 
 
 
