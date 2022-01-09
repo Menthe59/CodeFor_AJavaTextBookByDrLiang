@@ -460,31 +460,145 @@ public class MainOfChapter3 {
 */
 
         //quiz3.14
+/*
+        int symbolNumber = (int)(Math.random() * 2);
+        int userGuess;
+        System.out.println("Enter your guess , 0 for tail , 1 for head :");
+        userGuess = input.nextInt();
 
+        if (userGuess == symbolNumber){
+            System.out.println("Your guess is right!");
+        }else {
+            System.out.println("Your guess is wrong!");
+        }
+*/
 
+        //quiz3.15
+/*
+        int lottery = (int)(Math.random() * 1000);
 
+        System.out.println("Enter your lottery pick(three digits) :");
+        int guess = input.nextInt();
 
+        int lotteryDigit1 = lottery % 10;
+        int lotteryDigit2 = lottery / 10 % 10;
+        int lotteryDigit3 = lottery / 100;
 
+        int guessDigit1 = guess % 10;
+        int guessDigit2 = guess / 10 % 10;
+        int guessDigit3 = guess / 100;
 
+        System.out.println("The lottery number is " + lottery);
 
+        if (lottery == guess){
+            System.out.println("Exact match : you win $10,000 ");
+        }else if ((lotteryDigit1 == guessDigit1 && lotteryDigit2 ==guessDigit3 && lotteryDigit3 == guessDigit2)
+        || (lotteryDigit1 == guessDigit3 && lotteryDigit3 == guessDigit2 && lotteryDigit2 == guessDigit1)
+        || (lotteryDigit1 == guessDigit2 && lotteryDigit2 == guessDigit1 && lotteryDigit3 == guessDigit3)
+        || (lotteryDigit1 == guessDigit3 && lotteryDigit2 == guessDigit1 && lotteryDigit3 == guessDigit2)
+        || (lotteryDigit1 == guessDigit3 && lotteryDigit2 == guessDigit2 && lotteryDigit3 == guessDigit1)){
+            System.out.println("Match all digits : you win $3,000");
+        }else if (lotteryDigit1 == guessDigit1 || lotteryDigit1 == guessDigit2 || lotteryDigit1 ==guessDigit3
+        || lotteryDigit2 == guessDigit1 || lotteryDigit2 == guessDigit2 || lotteryDigit2 == lotteryDigit3
+        || lotteryDigit3 == guessDigit1 || lotteryDigit3 == guessDigit2 || lotteryDigit3 == guessDigit3){
+            System.out.println("Match one digit : you win $1,000");
+        }else {
+            System.out.println("Sorry , no match");
+        }
+*/
 
+        //quiz3.16
+/*
+        double pointX = Math.random() * 50;
+        double pointY = Math.random() * 100;
 
+        int directionX = (int)(Math.random() * 2);
+        int directionY = (int)(Math.random() * 2);
 
+        if (directionX == 0){
+            pointX *= -1;
+        }
+        if (directionY == 0){
+            pointY *= -1;
+        }
 
+        System.out.println("The random point is (" + pointX + " , " + pointY +")");
+*/
 
+        //quiz3.17
+/*
+        final int userGuess,computerGuess;
 
+        computerGuess = (int)(Math.random() * 3);
+        System.out.println("scissor(0) , rock(1) , paper(2)");
+        userGuess = input.nextInt();
 
+        if(computerGuess == 0){
+            if (userGuess == 0){
+                System.out.println("The compute is scissor. You are scissor. It is a draw");
+            }else if (userGuess == 1){
+                System.out.println("The computer is scissor. You are rock. You won");
+            }else if (userGuess == 2){
+                System.out.println("The computer is scissor. You are paper. You lost");
+            }
+        }else if (computerGuess == 1){
+            if (userGuess == 0){
+                System.out.println("The compute is rock. You are scissor. You lost");
+            }else if (userGuess == 1){
+                System.out.println("The computer is rock. You are rock. It is a draw");
+            }else if (userGuess == 2){
+                System.out.println("The computer is rock. You are paper. You win");
+            }
+        }else if (computerGuess == 2){
+            if (userGuess == 0){
+                System.out.println("The compute is paper. You are scissor. You win");
+            }else if (userGuess == 1){
+                System.out.println("The computer is paper. You are rock. You lost");
+            }else if (userGuess == 2){
+                System.out.println("The computer is paper. You are paper. It is a draw");
+            }
+        }
+*/
 
+        //quiz3.19
+/*
+        System.out.println("Enter the weight of package(pounds):");
+        double userWeight = input.nextDouble();
 
+        if (userWeight > 0 && userWeight <= 1){
+            System.out.println("You're cost is $ 3.5");
+        }else if (userWeight > 1 && userWeight <= 3){
+            System.out.println("You're cost is $ 5.5");
+        }else if (userWeight > 3 && userWeight <= 10){
+            System.out.println("You're cost is $ 8.5");
+        }else if (userWeight >10 && userWeight <= 20){
+            System.out.println("You're cost is $ 10.5");
+        }else {
+            System.out.println("The package cannot be shipped");
+        }
+*/
 
+        //quiz3.20
+/*
+        double edge1, edge2, edge3, perimeter = 0;
 
+        System.out.println("Enter the first edge of the triangle :");
+        edge1 = input.nextDouble();
+        System.out.println("Enter the second edge of the triangle :");
+        edge2 = input.nextDouble();
+        System.out.println("Enter the third edge of the triangle :");
+        edge3 = input.nextDouble();
 
+        if (edge1 + edge2 > edge3 && edge1 + edge3 > edge2 && edge2 + edge3 > edge1){
+            perimeter = edge1 + edge2 + edge3;
+        }else {
+            System.out.println("The input is invalid");
+        }
 
-
-
-
-
-
+        if (perimeter != 0){
+            System.out.println("The perimeter of triangle is " + perimeter);
+        }
+*/
 
     }
 }
