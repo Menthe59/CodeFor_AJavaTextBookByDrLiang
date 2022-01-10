@@ -1,5 +1,6 @@
 package pers.menthe59.chapter3;
 
+import java.awt.font.ImageGraphicAttribute;
 import java.util.*;
 
 public class MainOfChapter3 {
@@ -600,5 +601,371 @@ public class MainOfChapter3 {
         }
 */
 
+        //quiz3.21
+/*
+        int year, month, day, j, h, q, m, k;
+
+        System.out.println("Enter year:(e.g., 2012)");
+        year = input.nextInt();
+        System.out.println("Enter month:1-12");
+        month = input.nextInt();
+        System.out.println("Enter the day of the month:1-31");
+        day = input.nextInt();
+
+        if (month  == 1 || month == 2){
+            month += 12;
+            year -= 1;
+        }
+
+        q = day;
+        m = month;
+        j = year / 100;
+        k = year % 100;
+        h = (q + (26*(m+1)/10) + k + k/4 + j/4 + 5*j) % 7;
+
+        switch (h){
+            case 0:
+                System.out.println("Day of the week is Saturday");
+                break;
+            case 1:
+                System.out.println("Day of the week is Sunday");
+                break;
+            case 2:
+                System.out.println("Day of the week is Monday");
+                break;
+            case 3:
+                System.out.println("Day of the week is Tuesday");
+                break;
+            case 4:
+                System.out.println("Day of the week is Wednesday");
+                break;
+            case 5:
+                System.out.println("Day of the week is Thursday");
+                break;
+            case 6:
+                System.out.println("Day of the week is Friday");
+                break;
+        }
+*/
+
+        //quiz3.22
+/*
+        double coordinateX,coordinateY,distance;
+
+        System.out.println("Enter a point two coordinates:");
+        coordinateX = input.nextDouble();
+        coordinateY = input.nextDouble();
+        distance = Math.sqrt(Math.pow(coordinateX,2)+Math.pow(coordinateY,2));
+
+        if (distance < 10){
+            System.out.println("Point (" + coordinateX + "," + coordinateY + ") is in the circle");
+        }else {
+            System.out.println("Point (" + coordinateX + "," + coordinateY + ") is not in the circle");
+        }
+*/
+
+        //quiz3.23
+/*
+        double coordinateX,coordinateY,distance;
+        System.out.println("Enter a point with two coordinates:");
+        coordinateX = input.nextDouble();
+        coordinateY = input.nextDouble();
+
+        if (Math.abs(coordinateX) < 5 && Math.abs(coordinateY) < 2.5){
+            System.out.println("Point (" + coordinateX + "," + coordinateY + ") is in the rectangle");
+        }else{
+            System.out.println("Point (" + coordinateX + "," + coordinateY + ") is not in the rectangle");
+        }
+*/
+
+        //quiz3.24
+/*
+        int number,color;
+
+        Random r1 = new Random();
+        Random r2 = new Random();
+        number = r1.nextInt(13);
+        color = r2.nextInt(4);
+
+        switch (number){
+            case 0:
+                System.out.print("The card you picked is Ace of");
+                break;
+            case 1:
+                System.out.print("The card you picked is 2 of");
+                break;
+            case 2:
+                System.out.print("The card you picked is 3 of");
+                break;
+            case 3:
+                System.out.print("The card you picked is 4 of");
+                break;
+            case 4:
+                System.out.print("The card you picked is 5 of");
+                break;
+            case 5:
+                System.out.print("The card you picked is 6 of");
+                break;
+            case 6:
+                System.out.print("The card you picked is 7 of");
+                break;
+            case 7:
+                System.out.print("The card you picked is 8 of");
+                break;
+            case 8:
+                System.out.print("The card you picked is 9 of");
+                break;
+            case 9:
+                System.out.print("The card you picked is 10 of");
+                break;
+            case 10:
+                System.out.print("The card you picked is Jack of");
+                break;
+            case 11:
+                System.out.print("The card you picked is Queen of");
+                break;
+            case 12:
+                System.out.print("The card you picked is king of");
+                break;
+        }
+        switch (color){
+            case 0:
+                System.out.println(" Clubs");
+                break;
+            case 1:
+                System.out.println(" Diamonds");
+                break;
+            case 2:
+                System.out.println(" Hearts");
+                break;
+            case 3:
+                System.out.println(" Spades");
+                break;
+        }
+*/
+
+        //quiz3.25
+/*
+        double x1,y1,x2,y2,x3,y3,x4,y4;
+        double a,b,c,d,e,f,x,y,discriminant;
+
+        x1 = input.nextDouble();
+        y1 = input.nextDouble();
+        x2 = input.nextDouble();
+        y2 = input.nextDouble();
+        x3 = input.nextDouble();
+        y3 = input.nextDouble();
+        x4 = input.nextDouble();
+        y4 = input.nextDouble();
+
+        a = y1 - y2;
+        b = x2 - x1;
+        c = y3 - y4;
+        d = x4 - x3;
+        e = a * x1 + b * y1;
+        f = c * x3 + d * y3;
+        discriminant = a * d - b * c;
+
+        if (discriminant != 0){
+            x = (e * d - b * f) / discriminant;
+            y = (a * f - e * c) / discriminant;
+            System.out.println("The intersecting point is at (" + x + "," + y + ")");
+        }else {
+            System.out.println("The two lines are parallel");
+        }
+*/
+
+        //quiz3.26
+/*
+        System.out.println("Enter an integer:");
+        int userInt = input.nextInt();
+
+        System.out.println("Is " + userInt + " divisible by 5 and 6? " +
+                (userInt % 5 == 0 && userInt % 6 ==0));
+        System.out.println("Is " + userInt + " divisible by 5 or 6? " +
+                (userInt % 5 ==0 || userInt % 6 ==0));
+        System.out.println("Is " + userInt +  "divisible by 5 or 6, but not both? " +
+                ((userInt % 5 ==0 || userInt % 6 ==0) ^ (userInt % 5 == 0 && userInt % 6 ==0)));
+*/
+
+        //quiz3.27
+        //Something wrong
+/*
+        double xCoordinate,yCoordinate;
+        double edge1,edge2,edge3,p,area;
+        final double triangleArea = 10000.0;
+        System.out.println("Enter a point's x- and y-coordinates:");
+        xCoordinate = input.nextDouble();
+        yCoordinate = input.nextDouble();
+
+        edge1 = Math.sqrt(Math.pow(xCoordinate - 0,2) + Math.pow(yCoordinate - 0,2));
+        edge2 = Math.sqrt(Math.pow(xCoordinate - 0,2) + Math.pow(yCoordinate - 100,2));
+        edge3 = Math.sqrt(Math.pow(xCoordinate - 200,2) + Math.pow(yCoordinate - 0,2));
+        p = (edge1 + edge2 + edge3) / 2;
+        area = Math.sqrt(p*(p-edge1)*(p-edge2)*(p-edge3));
+
+        if (area == triangleArea){
+            System.out.println("The point is in the triangle");
+        }else{
+            System.out.println("The point is not in the triangle");
+        }
+*/
+
+        //quiz3.28
+/*
+        double xCoordinate1,yCoordinate1,xCoordinate2,yCoordinate2,width1,height1,width2,height2,xDistance,yDistance;
+
+        System.out.println("Enter r1's center x-, y-coordinates, width, and height:");
+        xCoordinate1 = input.nextDouble();
+        yCoordinate1 = input.nextDouble();
+        width1 = input.nextDouble();
+        height1 = input.nextDouble();
+        System.out.println("Enter r1's center x-, y-coordinates, width, and height:");
+        xCoordinate2 = input.nextDouble();
+        yCoordinate2 = input.nextDouble();
+        width2 = input.nextDouble();
+        height2 = input.nextDouble();
+
+        xDistance = xCoordinate1 - xCoordinate2 >= 0 ? xCoordinate1 - xCoordinate2 : xCoordinate2 - xCoordinate1;
+        yDistance = yCoordinate1 - yCoordinate2 >= 0 ? yCoordinate1 - yCoordinate2 : yCoordinate2 - yCoordinate1;
+
+        if (xDistance < (width1 - width2) / 2 && yDistance < (height1 - height2) / 2){
+            System.out.println("r2 is inside r1");
+        }else if (xDistance < (width1 + width2) / 2 && yDistance < (height1 + height2) / 2){
+            System.out.println("r2 overlaps r1");
+        }else{
+            System.out.println("r2 does not overlap r1");
+        }
+*/
+        //quiz3.29
+/*
+        double xCoordinate1,yCoordinate1,xCoordinate2,yCoordinate2,radius1,radius2,distance;
+
+        System.out.println("Enter circle1's center x- ,y-coordinates, and radius :");
+        xCoordinate1 = input.nextDouble();
+        yCoordinate1 = input.nextDouble();
+        radius1 = input.nextDouble();
+        System.out.println("Enter circle2's center x- ,y-coordinates, and radius :");
+        xCoordinate2 = input.nextDouble();
+        yCoordinate2 = input.nextDouble();
+        radius2 = input.nextDouble();
+
+        distance = Math.sqrt(Math.pow(xCoordinate2 - xCoordinate1,2) + Math.pow(yCoordinate2 - yCoordinate1,2));
+        if (distance <= Math.abs(radius1 - radius2)){
+            System.out.println("Circle2 is inside circle1");
+        }else if (Math.abs(radius1 - radius2) < distance && distance <= radius1 + radius2){
+            System.out.println("Circle2 is overlaps circle1");
+        }else if (distance > radius1 + radius2){
+            System.out.println("Circle2 is not overlap circle1");
+        }
+*/
+
+        //quiz3.30
+/*
+        int timeZoneOffset;
+        long currentHours,currentMinters,currentSconds;
+
+        currentSconds = (System.currentTimeMillis() / 1000) % 60;
+        currentMinters = (System.currentTimeMillis() / 1000 / 60) % 60;
+        currentHours = (System.currentTimeMillis() / 1000 / 60 / 60) % 24;
+
+        System.out.println("Enter the time zone offset to GMT :");
+        timeZoneOffset = input.nextInt();
+
+        currentHours = (currentHours + timeZoneOffset +24) % 24;
+
+        if (currentHours <= 12){
+            System.out.println("The current time is " + currentHours + " : " + currentMinters + " : " + currentSconds + " AM");
+        }else {
+            currentHours %= 12;
+            System.out.println("The current time is " + currentHours + " : " + currentMinters + " : " + currentSconds + " PM");
+        }
+*/
+
+        //quiz3.31
+/*
+        double exchangeRate,moneyAccount;
+        int convertSymbol;
+
+        System.out.println("Enter the exchange rate from dollars to RMB :");
+        exchangeRate = input.nextDouble();
+        System.out.println("Enter 0 to convert dollars to RMB and 1 vice versa :");
+        convertSymbol = input.nextInt();
+
+        if (convertSymbol == 0){
+            System.out.println("Enter the dollar amount:");
+            moneyAccount = input.nextDouble();
+            System.out.println("$" + moneyAccount + " is " + moneyAccount * exchangeRate + " yuan");
+        }else if (convertSymbol == 1){
+            System.out.println("Enter the RMB amount:");
+            moneyAccount = input.nextDouble();
+            System.out.println(moneyAccount + " yuan is $" + moneyAccount / exchangeRate);
+        }
+*/
+
+        //quiz3.32
+/*
+        double x0,y0,x1,y1,x2,y2,judgeSymbol;
+        System.out.println("Enter three point for p0, p1 and p2");
+        x0 = input.nextDouble();
+        y0 = input.nextDouble();
+        x1 = input.nextDouble();
+        y1 = input.nextDouble();
+        x2 = input.nextDouble();
+        y2 = input.nextDouble();
+
+        judgeSymbol = (x1 - x0) * (y2 - y0) - (x2 - x0) * (y1 - y0);
+        if (judgeSymbol > 0){
+            System.out.println("(" + x2 + "," + y2 + ") is on the left side of the line form ("
+                    + x0 + "," + y0 + ") to (" + x1 + "," + y1 + ")");
+        }else if (judgeSymbol == 0){
+            System.out.println("(" + x2 + "," + y2 + ") is on the line form ("
+                    + x0 + "," + y0 + ") to (" + x1 + "," + y1 + ")");
+        }else if (judgeSymbol < 0){
+            System.out.println("(" + x2 + "," + y2 + ") is on the right side of the line form ("
+                    + x0 + "," + y0 + ") to (" + x1 + "," + y1 + ")");
+        }
+*/
+
+        //quiz3.33
+/*
+        double weight1,price1,weight2,price2;
+        System.out.println("Enter weight and price for package 1:");
+        weight1 = input.nextDouble();
+        price1 = input.nextDouble();
+        System.out.println("Enter weight and price for package 2:");
+        weight2 = input.nextDouble();
+        price2 = input.nextDouble();
+
+        if((weight1/price1) < (weight2 / price2)){
+            System.out.println("Package 2 has a better price");
+        }else if ((weight1/price1) > (weight2 / price2)){
+            System.out.println("Package 1 has a better price");
+        }else if ((weight1/price1) == (weight2 / price2)){
+            System.out.println("Two packages have the same price");
+        }
+*/
+
+        //quiz3.34
+/*
+        double x0,y0,x1,y1,x2,y2,judgeSymbol;
+        System.out.println("Enter three point for p0, p1 and p2");
+        x0 = input.nextDouble();
+        y0 = input.nextDouble();
+        x1 = input.nextDouble();
+        y1 = input.nextDouble();
+        x2 = input.nextDouble();
+        y2 = input.nextDouble();
+
+        judgeSymbol = (x1 - x0) * (y2 - y0) - (x2 - x0) * (y1 - y0);
+        if (judgeSymbol == 0){
+            System.out.println("(" + x2 + "," + y2 + ") is on the line segment form ("
+                    + x0 + "," + y0 + ") to (" + x1 + "," + y1 + ")");
+        }else if (judgeSymbol != 0){
+            System.out.println("(" + x2 + "," + y2 + ") is not on the line segment form ("
+                    + x0 + "," + y0 + ") to (" + x1 + "," + y1 + ")");
+        }
+*/
+        input.close();
     }
 }
