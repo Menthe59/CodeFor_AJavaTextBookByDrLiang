@@ -1,5 +1,4 @@
 package pers.menthe59.chapter6;
-import javax.swing.*;
 import java.util.Scanner;
 
 public class quiz06 {

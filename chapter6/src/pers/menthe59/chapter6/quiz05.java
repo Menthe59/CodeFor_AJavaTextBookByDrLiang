@@ -1,6 +1,4 @@
 package pers.menthe59.chapter6;
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 public class quiz05 {
