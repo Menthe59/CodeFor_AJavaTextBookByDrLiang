@@ -15,10 +15,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="23eBGJdu38isCnr4gDgFpoOqUPz" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -32,7 +36,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.quiz02">
     <configuration name="quiz01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pers.menthe.chapter7.quiz01" />
       <module name="chapter7" />
@@ -46,8 +50,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="quiz02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.menthe.chapter7.quiz02" />
+      <module name="chapter7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.menthe.chapter7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.quiz02" />
         <item itemvalue="Application.quiz01" />
       </list>
     </recent_temporary>
@@ -63,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1642084574874</updated>
       <workItem from="1642084625020" duration="1756000" />
+      <workItem from="1642260210132" duration="611000" />
     </task>
     <servers />
   </component>
